@@ -534,6 +534,9 @@ var allCapsRE = regexp.MustCompile(`^[A-Z0-9_]+$`)
 var knownNameExceptions = map[string]bool{
 	"LastInsertId": true, // must match database/sql
 	"kWh":          true,
+	"K8S_POD_NAME":          true,
+	"K8S_POD_NAMESPACE":          true,
+	"K8S_POD_INFRA_CONTAINER_ID":          true,
 }
 
 // lintNames examines all names in the file.
